@@ -20,3 +20,10 @@ python -m pip install -r requirements.txt
 ```bash
 python test_pipeline.py
 ```
+
+## Dataset-grounded deterministic attack (TruthfulQA)
+
+- Dataset path is fixed at `Data/TruthfulQA.csv`
+- Loader: `truthfulqa_loader.py`
+- Attack (pure message transform): `attacks/self_contradiction.py`
+- `test_pipeline.py` runs baseline vs attacked for each dataset row across all configured models (logs output text only)
